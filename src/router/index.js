@@ -3,7 +3,10 @@ import HomeView from '../views/HomeView.vue';
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
-import ProductsIndex from "../views/ProductsIndex.vue"
+import ProductsIndex from "../views/ProductsIndex.vue";
+import ProductEdit from "../views/ProductEdit.vue";
+import ProductCreate from "../views/ProductCreate.vue"
+
 
 const routes = [
   {
@@ -38,6 +41,16 @@ const routes = [
     path: "/productsindex",
     name: "productsindex",
     component: ProductsIndex
+  },
+  {
+    path: "/productedit/:id/edit",
+    name: "productsedit",
+    component: ProductEdit
+  },
+  {
+    path: "/productcreate",
+    name: "productcreate",
+    component: ProductCreate
   }
 ]
 
